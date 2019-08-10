@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+.col-1{ width: 8.33%; }
+.col-2{ width: 16.66%; }
+.col-3{ width: 25%; }
+.col-4{ width: 33.33%; }
+.col-5{ width: 41.66%; }
+.col-6{ width: 50%; }
+.col-7{ width: 58.33%; }
+.col-8{ width: 66.66%; }
+.col-9{ width: 75%; }
+.col-10{ width: 83.33%; }
+.col-11{ width: 91.66%; }
+.col-12{ width: 100%; }
+
+[class*='col-'] {
+    float: left;
+    border: 1px solid gray;
+}
+.rwo:after{
+    content: ' ';
+    clear: both;
+    display: block;
+}
+.wrapper{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+.header-top-height{height: 30px;}
+.header-height{height: 200px;}
+.menu-height{height: 50px;}
+.content-height{height: 600px;}
+.big-footer-height{height: 300px;}
+.footer-height{height: 30px;}
+
+.main-ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.main-ul li{
+    float: left;
+    width: 120px;
+    border: 1px solid gray;
+}
+.main-ul li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    height: 46px;
+    padding-top: 15px;
+    background-color: black;
+    color: white;
+    transition: 1.5s;
+}
+.main-ul li a:hover{
+    background-color: white;
+    color: black;
+}
+/*.div-one{*/
+
+/*    !*For Rectangle*!*/
+/*    height: 200px;*/
+/*    width: 200px;*/
+/*    background-color: #8e21d7;*/
+/*    margin: 50px 0 0 50px;*/
+/*    transform:  skewY(25deg);*/
+/*    float: left;*/
+
+/*    !*For Circle*!*/
+/*    !*height: 200px;*!*/
+/*    !*width: 200px;*!*/
+/*    !*background-color: #8e21d7;*!*/
+/*    !*margin: 50px 0 0 50px;*!*/
+/*    !*border-radius: 100px;*!*/
+
+
+/*    !*For One-Fourth*!*/
+/*    !*height: 100px;*!*/
+/*    !*width: 100px;*!*/
+/*    !*background-color: #8e21d7;*!*/
+/*    !*margin: 50px 0 0 50px;*!*/
+/*    !*border-radius: 100px 0 0 0;*!*/
+
+
+/*    !*For One-half*!*/
+/*    !*height: 100px;*!*/
+/*    !*width: 200px;*!*/
+/*    !*background-color: #8e21d7;*!*/
+/*    !*margin: 50px 0 0 50px;*!*/
+/*    !*border-radius: 100px 100px 0 0;*!*/
+
+/*}*/
+
+/*.div-two {*/
+/*    !*For Rectangle*!*/
+/*    height: 200px;*/
+/*    width: 200px;*/
+/*    background-color: #8e21d7;*/
+/*    margin: 50px 0 0 5px;*/
+/*    transform: skewY(-25deg);*/
+/*    float: left;*/
+/*}*/
+/*.div-three {*/
+/*    !*For Rectangle*!*/
+/*    height: 200px;*/
+/*    width: 20px;*/
+/*    background-color: red;*/
+/*    margin: 50px 0 0 50px;*/
+/*    transform: skewX(-30deg);*/
+/*    float: left;*/
+/*}*/
+/*.div-four {*/
+/*    !*For Rectangle*!*/
+/*    height: 200px;*/
+/*    width: 20px;*/
+/*    background-color: red;*/
+/*    margin: 50px 0 0 100px;*/
+/*    transform: skewX(30deg);*/
+/*    float: left;*/
+/*}*/
+.div-one{
+    height: 200px;
+    width: 400px;
+    background-color: red;
+    margin: 50px 0 0 50px;
+    animation: barat;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /*transform: scale(1);*/
+    /*transition: 1s;*/
+}
+@keyframes barat {
+    /*from{background-color: black}*/
+    /*to{background-color: yellow}*/
+
+    /*0%{background-color: red}*/
+    /*25%{background-color: green}*/
+    /*50%{background-color: yellow}*/
+    /*75%{background-color: black}*/
+    /*100%{background-color: blue}*/
+
+    0%{background: url("../images/1.jpg")}
+    25%{background: url("../images/2.jpg")}
+    50%{background: url("../images/3.jpg")}
+    75%{background: url("../images/4.jpg")}
+    100%{background: url("../images/5.jpg")}
+}
+.div-one:hover{
+    /*transform: scale(1.5);*/
+}
